@@ -14,6 +14,8 @@ namespace FirstConsoleLessonApp
             Console.OutputEncoding = Encoding.UTF8;
             TestMethod();
             CreateArray();
+            int number;
+            number = 0;
         }
 
         private static void CreateArray()
