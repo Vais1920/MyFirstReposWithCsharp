@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FirstConsoleLessonApp": {
+      "commandName": "Project",
+      "commandLineArgs": "test1"
+    }
+  }
+}
