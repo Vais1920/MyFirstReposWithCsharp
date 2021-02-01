@@ -12,10 +12,11 @@ namespace FirstConsoleLessonApp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            TestMethod();
-            CreateArray();
-            int number;
-            number = 0;
+            //TestMethod();
+            //CreateArray();
+            int a = 10;
+            CreateMethodWithReferenceParams(ref a, 7);
+            Console.WriteLine(a);
         }
 
         private static void CreateArray()
@@ -47,6 +48,17 @@ namespace FirstConsoleLessonApp
                     Console.WriteLine("Введите число");
                 }
             }
+        }
+
+
+        /*
+         * Ключевое слово ref позволяет передать в метод параметр не по значению, а по ссылке => если параметр
+         * изменится, то и значение переменной, которая была передана в качестве параметра, тоже изменится.
+         * Это продемонстрировано в методе CreateMethodWithReferenceParams.
+         */
+        private static int CreateMethodWithReferenceParams(ref int a, int b)
+        {
+            return a += b;
         }
     }
 }
