@@ -5,7 +5,6 @@ namespace FirstConsoleLessonApp
 {
     class Program
     {
-
         private static void CreateArray()
         {
             int[] numbers = new int[] { 1, 2, 3, 4, 5 };
@@ -113,9 +112,14 @@ namespace FirstConsoleLessonApp
             //if (returnResult)
             //    Console.WriteLine(result);
             //else Console.WriteLine("Неверное значение b (0)");
-            PrintArray(10, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        }
+            //PrintArray(10, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+            //Printer.Print("string");
 
-        
+            Person person;
+            person = new Person();
+
+            person.Name = "Vitalik";
+            Console.WriteLine(person._name);
+        }
     }
 }
